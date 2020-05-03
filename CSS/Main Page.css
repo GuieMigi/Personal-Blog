@@ -1,0 +1,175 @@
+@import "Layout/Header.css";
+@import "Layout/Nav.css";
+@import "Layout/Footer.css";
+@import "Fonts and Colors.css";
+
+/* Modalitate de a folosi layout-uri diferite pentru rezoluții diferite */
+/* <link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" />
+<link rel="stylesheet" media="screen and (min-width: 600px)" href="large.css" />
+<link rel="stylesheet" media="print" href="print.css" /> */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.post {
+    text-align: justify;
+    padding: 15px;
+    }
+
+.post-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-section-title {
+    text-align: center
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+@media(min-width: 600px) and (max-width: 879px) {
+    .card-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 70px 1fr 1fr 1fr;
+}
+
+    /* Hide the post image on smaller screens */
+    /* .post-image {
+        display: none;
+    } */
+
+    .card-section-title {
+        grid-area: 1/1/5/3;
+    }
+}
+
+@media(min-width: 880px) and (max-width: 1149px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 70px 1fr 1fr;
+        width: 100%;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 45% 1fr;
+    }
+
+    .post-container {
+        padding: 15px;
+    }
+
+    .card-section-title {
+        grid-area: 1/1/4/4;
+    }
+}
+
+@media(min-width: 1150px) and (max-width: 1449px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 70px 1fr 1fr;
+        width: 100%;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 35% 1fr;
+    }
+
+    .post-container {
+        padding: 15px;
+    }
+
+    .card-section-title {
+        grid-area: 1/1/4/5;
+    }
+}
+
+@media(min-width: 1450px) and (max-width: 1749px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 70px 1fr 1fr;
+        width: 100%;
+    }
+
+    .post-container {
+        padding: 15px;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+    }
+
+    .card-section-title {
+        grid-area: 1/1/4/6;
+    }
+}
+
+/* Full screen layout */
+@media(min-width: 1750px){
+    .post-container {
+        padding: 15px;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 25% 1fr;
+    }
+
+    .card-section-title {
+        grid-area: 1/1/3/7;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 70px 1fr;
+        width: 100%;
+    }
+}
+
+/* Instead of rendering at its native width and overflowing its containing box,
+the image will render at its native dimensions as long as it's width doesn't exceed the width of its container. */
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    width: auto;
+    height: auto;
+    border: none;
+}

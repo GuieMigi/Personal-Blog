@@ -1,0 +1,52 @@
+@import "Layout/Header.css";
+@import "Layout/Nav.css";
+@import "Layout/Footer.css";
+@import "Fonts and Colors.css";
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.author-card{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+}
+
+@media(min-width:900px){
+    main{
+        width: 60%;
+    }
+
+    .author-card {
+        width: 30%;
+    }
+}
+
+button {
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,72 @@
+@import "Layout/Nav.css";
+@import "Layout/Header.css";
+@import "Layout/Footer.css";
+@import "Fonts and Colors.css";
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.single-post-container {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.share-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+
+@media(min-width: 1000px) {
+    main {
+        width: 80%;
+    }
+
+    .single-post-container {
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #image-text-wrap {
+        max-width: 60%;
+        float: right;
+        margin: 10px;
+    }
+
+    .share-buttons {
+        width: 60%;
+    }
+}
+
+#facebook, #twiter, #instagram {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+button {
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-align: justify;
+}

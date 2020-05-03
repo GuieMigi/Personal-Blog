@@ -1,0 +1,43 @@
+.main-container {
+    border: 2px solid blue;
+}
+
+nav {
+    border: 2px solid lightseagreen;
+}
+
+header {
+    border: 2px solid black;
+}
+
+main {
+    border: 2px solid red;
+}
+
+.card-container {
+    border: 2px solid lightskyblue;
+}
+
+.card {
+    border: 2px solid green;
+}
+
+footer {
+    border: 2px solid teal;
+}
+
+.post {
+    border: 2px solid yellow;
+}
+
+.share-buttons {
+    border: 2px solid black;
+}
+
+.single-post-container {
+    border: 2px solid green;
+}
+
+.author-card{
+    border: 2px solid yellow;
+}

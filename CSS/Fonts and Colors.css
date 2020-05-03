@@ -1,0 +1,75 @@
+body {
+    font: normal 100%;
+}
+
+nav {
+    background-color: #d8d8e7d8;
+    font-size: 0.6em;
+}
+
+header {
+    font-size: 1.3em;
+}
+
+.main-container {
+    font-size: 1.5em;
+}
+
+.post {
+    background-color:#d8d8e7d8;
+}
+
+.post-data {
+    font-size: 0.6em;
+    color: darkgreen;
+}
+
+#single-post-details {
+    font-size: 0.6em;
+    color: darkgreen;
+}
+
+.post-description {
+    font-size: 0.8em;
+}
+
+.post-read-more {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: darkviolet;
+}
+
+.card-data {
+    font-size: 0.6em;
+    color: darkred;
+}
+
+footer {
+    background-color: #d8d8e7d8;
+    font-size: 0.6em;
+}
+
+button {
+    background-color: transparent;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.author-card-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.author-card-title {
+    font-size: 0.8em;
+    color: darkgreen;
+}
+
+.author-card-company {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.author-card-bio {
+    text-align: justify;
+}

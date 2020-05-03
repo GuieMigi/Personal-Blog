@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    justify-content: center;
+}
+
+@media(min-width: 1000px) {
+    nav {
+        width: 80%;
+        justify-content: right;
+    }
+}
